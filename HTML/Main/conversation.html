@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            The Outside
+        </title>
+
+       
+        <link rel="shortcut icon" type="image/png" href="../../Images/Artificial-Eye.png"/>
+        <link rel="stylesheet" href="../../CSS/console.css">
+       
+        <!---
+        <script>
+            alert("Start Application?");
+        </script>
+    -->
+
+    </head>
+
+    <body>
+        <h1>Menu</h1>
+        <div id="container1">
+          <div id="console">
+            <p id="console_content">
+        
+            </p>
+          </div>
+          <div>
+            <input id="commandline" type="text" name="command_line" placeholder="Command line">
+            <input id="commandButton" type="button" name="command_button" value="confirm" onclick="showVal();">
+          </div>
+        </div>
+      
+      </body>
+      <script>
+        function showVal() {
+          var tmp = document.getElementById("commandline").value;
+          document.getElementById('console_content').innerHTML += (tmp + "<br/>");
+        }
+      </script>
+
+</html>

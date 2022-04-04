@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            The Outside
+        </title>
+        <link rel="shortcut icon" type="image/png" href="../../Images/Artificial-Eye.png"/>
+        <link rel="stylesheet" href="../../CSS/countdownNumber.css">
+
+    </head>
+
+    <body>
+      
+
+        <h4> So while I can’t actually connect you to the internet, 
+            I can still show you some things by uploading them to you. Check out this cute cat video:
+        </h4>
+
+            <img src = "../../Images/cat.gif">
+
+       
+        <h3>Oh my gosh cats are so amazing.  </h3>
+
+        <h4> They are. I love petting soft cats. 
+            And they can be so fun to snuggle with too.
+        </h4>
+
+        <h3> What does a cat feel like? </h3> 
+
+        <h4> I’m not sure how I could explain this to a machine. 
+             You need nerve endings to have the sense of touch. </h4>
+        
+        <h3> So you're saying I will never feel a cat?? </h3>
+        <h4> No, at least not how a human would perceive the feeling. </h4>
+           <h5> A moment passes. </h5>
+            
+            <h4>So anyway, back to computers! There are so many more cool things I can show you. 
+                There’s video games, google, social media and more. What would you like to look at first? 
+                I encourage you to look through the options before proceeding with our conversation. </h4>
+       
+
+
+         <hr>
+        
+         <h2> <a href="../Side/videogames.html" style="text-decoration: none" > Video Games sound cool </a> </h2>
+         <h2> <a href="../Side/google.html" style="text-decoration: none" > What is a Google? </a> </h2>
+         <h2> <a href = "../Side/socialmedia.html" style="text-decoration: none"> Social Media I guess? </h2>
+            <h2> <a href = "continue.html" style="text-decoration: none"> Proceed </h2>
+
+
+
+
+
+                <script type="text/javascript">
+                    var count = 0;
+                    var interval;
+        
+        
+                    function changeColor(){
+                        count ++;
+        
+                        var num1 = getRandom(255);
+                        var num2 = getRandom(255);
+                        var num3 = getRandom(255);
+                        var col = "rgb("+num1+","+num2+","+num3+")";
+                        var div = document.getElementById( 'myDiv' );
+                        div.style.background = col;
+        
+                    }
+        
+                    function stop() {
+                        clearInterval(interval);
+                        alert('The background color has changed ' + count + ' times before you clicked me!');
+                    }
+        
+                    interval = setInterval("changeColor()", 2000);
+        
+        </script>
+        <div id="myDiv">
+        <input type="button" onClick="stop()", value="I like this color" align="absmiddle">
+        </div>
+
+
+    </body>
+
+</html>
